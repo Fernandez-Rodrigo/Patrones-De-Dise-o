@@ -28,7 +28,7 @@ public class ZombieSpawner : MonoBehaviour
         int posZ = Random.Range(20, 280);
 
 
-        Vector3 newPosition = new Vector3(posX, 10, posZ);
+        Vector3 newPosition = new Vector3(posX, 0, posZ);
         
         return newPosition;
     }

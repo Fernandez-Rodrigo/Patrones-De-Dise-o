@@ -26,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9085541704334138924}
-  m_LocalRotation: {x: -0.67541456, y: 0.12551582, z: -0.015406723, w: 0.72651476}
+  m_LocalRotation: {x: -0.7049357, y: 0.055368215, z: 0.055368215, w: 0.7049357}
   m_LocalPosition: {x: 0.742, y: -0.193, z: -0.115}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 74.560005, z: -65.578}
 --- !u!33 &9085541704335262252
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -93,5 +93,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: Sword3
-  position: {fileID: 6333749175750811840, guid: 52ec003572873e44394372263242d463,
-    type: 3}

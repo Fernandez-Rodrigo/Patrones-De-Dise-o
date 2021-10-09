@@ -71,6 +71,17 @@
     <Compile Include="Assets\Scripts\AbstractFactory\Weapon\Weapon.cs" />
     <Compile Include="Assets\Scripts\AbstractFactory\Weapon\WeaponConfig.cs" />
     <Compile Include="Assets\Scripts\AbstractFactory\Weapon\WeaponFactory.cs" />
+    <Compile Include="Assets\Scripts\Builder\Clothes.cs" />
+    <Compile Include="Assets\Scripts\Builder\Consumer.cs" />
+    <Compile Include="Assets\Scripts\Builder\FemaleWarrior.cs" />
+    <Compile Include="Assets\Scripts\Builder\Gender.cs" />
+    <Compile Include="Assets\Scripts\Builder\MaleWarrior.cs" />
+    <Compile Include="Assets\Scripts\Builder\Set1.cs" />
+    <Compile Include="Assets\Scripts\Builder\Set2.cs" />
+    <Compile Include="Assets\Scripts\Builder\SetPosition.cs" />
+    <Compile Include="Assets\Scripts\Builder\UIConfig.cs" />
+    <Compile Include="Assets\Scripts\Builder\Warrior.cs" />
+    <Compile Include="Assets\Scripts\Builder\WarriorBuilder.cs" />
     <Compile Include="Assets\Scripts\Factory\CommonZombie.cs" />
     <Compile Include="Assets\Scripts\Factory\GreenZombie.cs" />
     <Compile Include="Assets\Scripts\Factory\RedZombie.cs" />
