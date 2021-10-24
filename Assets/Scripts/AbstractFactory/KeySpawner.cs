@@ -6,11 +6,7 @@ public class KeySpawner : MonoBehaviour
 {
     [SerializeField] private SpawnFacade spawnFacade;
 
-    /*  public void Configure(CharacterFactory _characterFactory)
-      {
-          currentCharacFactory = _characterFactory;
-      }
-    */
+   
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.M))
