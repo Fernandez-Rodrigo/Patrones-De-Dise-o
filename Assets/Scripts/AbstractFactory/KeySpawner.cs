@@ -4,38 +4,38 @@ using UnityEngine;
 
 public class KeySpawner : MonoBehaviour
 {
-    private CharacterFactory currentCharacFactory;
+    [SerializeField] private SpawnFacade spawnFacade;
 
-    public void Configure(CharacterFactory _characterFactory)
-    {
-        currentCharacFactory = _characterFactory;
-    }
-
+    /*  public void Configure(CharacterFactory _characterFactory)
+      {
+          currentCharacFactory = _characterFactory;
+      }
+    */
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            currentCharacFactory.CreateHero("Male");
+            spawnFacade.SpawnMale();
         }
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            currentCharacFactory.CreateHero("Female");
+            spawnFacade.SpawnFemale();
         }
 
         if (Input.GetKeyDown(KeyCode.S))
         {
-            currentCharacFactory.CreateWeapon("Sword1");
+            spawnFacade.SpawnSword1();
         }
 
         if (Input.GetKeyDown(KeyCode.D))
         {
-            currentCharacFactory.CreateWeapon("Sword2");
+            spawnFacade.SpawnSword2();
         }
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            currentCharacFactory.CreateWeapon("Sword3");
+            spawnFacade.SpawnSword3();
         }
 
       

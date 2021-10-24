@@ -4,33 +4,24 @@ using UnityEngine;
 
 public class ZombieSpawner : MonoBehaviour
 {
-    [SerializeField] private ZombieSpawnerFactory _zombieSpawnFactory;
-
+  
+    [SerializeField] private SpawnFacade spawnFacade;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Z))
         {
-             _zombieSpawnFactory.Create("Zombie", GeneratePosition()); 
+            spawnFacade.SpawnZombie();
         }else if (Input.GetKeyDown(KeyCode.R))
         {
-            _zombieSpawnFactory.Create("Red", GeneratePosition());
+            spawnFacade.SpawnRedZombie();
         }
         else if (Input.GetKeyDown(KeyCode.G))
         {
-           _zombieSpawnFactory.Create("Green", GeneratePosition());
+            spawnFacade.SpawnGreenZombie();
         }
     }
 
-    private Vector3 GeneratePosition()
-    {
-        int posX = Random.Range(100, 900);
-        int posZ = Random.Range(20, 280);
 
-
-        Vector3 newPosition = new Vector3(posX, 0, posZ);
-        
-        return newPosition;
-    }
 
 }
