@@ -79,8 +79,12 @@
     <Compile Include="Assets\Scripts\Builder\UIConfig.cs" />
     <Compile Include="Assets\Scripts\Builder\Warrior.cs" />
     <Compile Include="Assets\Scripts\Builder\WarriorBuilder.cs" />
+    <Compile Include="Assets\Scripts\Decorator\AttackDecorator.cs" />
     <Compile Include="Assets\Scripts\Decorator\FireAttack.cs" />
+    <Compile Include="Assets\Scripts\Decorator\IAttacker.cs" />
+    <Compile Include="Assets\Scripts\Decorator\RegulaAttack.cs" />
     <Compile Include="Assets\Scripts\Decorator\SpawnFire.cs" />
+    <Compile Include="Assets\Scripts\Decorator\TargetEnemy.cs" />
     <Compile Include="Assets\Scripts\Facade\SpawnFacade.cs" />
     <Compile Include="Assets\Scripts\Factory\CommonZombie.cs" />
     <Compile Include="Assets\Scripts\Factory\GreenZombie.cs" />

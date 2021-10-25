@@ -9,26 +9,20 @@ public class SpawnFire : MonoBehaviour
     [SerializeField] private Transform startPosition;
     [SerializeField] private Transform targetPosition;
 
-    private void Start()
+   
+
+    public void Spawn(AttackDecorator _attacker, Transform startPosition, Transform _endTarget)
     {
-
+        Instantiate(_attacker, startPosition);
+        _endTarget = targetPosition;
     }
-
-    public void Spawn()
-    {
-       
-        normalFire.Spawn(startPosition);
-        normalFire.target = targetPosition;
-
-    }
-
 
     private void Update()
     {
        
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Spawn();
+            Spawn(normalFire, startPosition, targetPosition);
         }
         
     }
