@@ -17,7 +17,8 @@ public class SpawnFire : MonoBehaviour
     public void Spawn()
     {
        
-        normalFire.Spawn(startPosition);  
+        normalFire.Spawn(startPosition);
+        normalFire.target = targetPosition;
 
     }
 
