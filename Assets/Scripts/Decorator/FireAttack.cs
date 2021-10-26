@@ -6,8 +6,6 @@ public class FireAttack : AttackDecorator
 {
     float speed = 90f;
     Transform target;
-    TargetEnemy targetEnemy;
- 
     private readonly int fireDamage = 50;
 
     private void Awake()
@@ -15,38 +13,27 @@ public class FireAttack : AttackDecorator
         target = GameObject.FindGameObjectWithTag("Finish").transform;
     }
 
-  
-    public FireAttack (IAttacker attacker, int _fireDamage) : base(attacker)
+    public FireAttack(IAttacker _attacker, int bonusDamage) : base(_attacker)
     {
-        fireDamage = _fireDamage;
+        this.fireDamage = bonusDamage;
     }
 
+    protected override void Modify()
+    {
+        _attacker.AddDamage(fireDamage, "Fuego");
+    }
+
+    /*
     private void Update()
     {
-        MoveToTareget();
+        MoveToTarget();
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.name == "Target")
-        {
-            
-            Destroy(this.gameObject);
-        }
-    }
-
-
-    public override void MakeDamage(TargetEnemy targetEnemy) 
-    {
-        base.MakeDamage(targetEnemy);
-        targetEnemy.DamageRecieve(fireDamage, "Fuego");
-    }
-        
-
-    public void MoveToTareget()
+   public void MoveToTarget()
     {        
-         float step = speed * Time.deltaTime;
+        /* float step = speed * Time.deltaTime;
          transform.position = Vector3.MoveTowards(transform.position, target.position, step);
-    }
-
+        */
+    //}
+  
 }

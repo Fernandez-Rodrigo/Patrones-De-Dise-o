@@ -414,6 +414,7 @@ GameObject:
   - component: {fileID: 721051776}
   - component: {fileID: 721051775}
   - component: {fileID: 721051774}
+  - component: {fileID: 721051780}
   m_Layer: 0
   m_Name: Target
   m_TagString: Finish
@@ -429,7 +430,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721051773}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -495,6 +496,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &721051780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721051773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a5bbd010e736e74e967f958be47fa64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1030516063
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2bc83dd3060d6843a1be42be580659e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalFire: {fileID: -6932849742919904220, guid: 08fd1b80cc24cc8439f45fda3c558255,
+  normalAttack: {fileID: 4837736490102722077, guid: 08fd1b80cc24cc8439f45fda3c558255,
     type: 3}
   startPosition: {fileID: 34780673}
   targetPosition: {fileID: 721051777}

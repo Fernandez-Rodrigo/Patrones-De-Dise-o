@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{3E03EFE6-1C0E-60FF-3F61-D911BDA1B707}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -80,8 +81,10 @@
     <Compile Include="Assets\Scripts\Builder\Warrior.cs" />
     <Compile Include="Assets\Scripts\Builder\WarriorBuilder.cs" />
     <Compile Include="Assets\Scripts\Decorator\AttackDecorator.cs" />
+    <Compile Include="Assets\Scripts\Decorator\Enemy.cs" />
     <Compile Include="Assets\Scripts\Decorator\FireAttack.cs" />
     <Compile Include="Assets\Scripts\Decorator\IAttacker.cs" />
+    <Compile Include="Assets\Scripts\Decorator\ITargetEnemy.cs" />
     <Compile Include="Assets\Scripts\Decorator\RegulaAttack.cs" />
     <Compile Include="Assets\Scripts\Decorator\SpawnFire.cs" />
     <Compile Include="Assets\Scripts\Decorator\TargetEnemy.cs" />

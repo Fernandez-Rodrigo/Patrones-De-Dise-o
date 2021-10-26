@@ -2,7 +2,8 @@
 
 public interface IAttacker
 {
-    void MakeDamage(TargetEnemy targetEnemy);
-    void MoveToTarget(float speed, Transform endTarget);
+    void MakeDamage(ITargetEnemy targetEnemy);
+    void AddDamage(int bonusDamage, string type);
+  
     
 }

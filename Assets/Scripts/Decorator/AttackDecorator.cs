@@ -2,25 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class AttackDecorator : MonoBehaviour, IAttacker
+public abstract class AttackDecorator : IAttacker
 {
+    protected IAttacker _attacker;
+    protected ITargetEnemy _enemy;
 
-    private readonly IAttacker _attacker;
-
-    protected AttackDecorator(IAttacker attacker)
+    public AttackDecorator(IAttacker specialAttack)
     {
-        _attacker = attacker;
+        this._attacker = specialAttack;
     }
 
-    public virtual void MakeDamage(TargetEnemy targetEnemy)
+    public void MakeDamage(ITargetEnemy targetEnemy)
     {
-        _attacker.MakeDamage(targetEnemy);
+      //  if (!_attacker.Equals(null))
+      //  {
+            _enemy = targetEnemy;
        
+       // }
     }
 
-    public void MoveToTarget(float speed, Transform endTarget)
-    {
-        float step = speed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, endTarget.position, step);
-    }
+
+    protected abstract void Modify();
+   
+    public void AddDamage(int bonusDamage, string type) { }
+
 }

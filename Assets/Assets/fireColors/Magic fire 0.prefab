@@ -14270,9 +14270,9 @@ GameObject:
   - component: {fileID: 4166505909902172}
   - component: {fileID: 198371139109276902}
   - component: {fileID: 199651328102623302}
-  - component: {fileID: -6932849742919904220}
   - component: {fileID: 954074316890080228}
   - component: {fileID: 7559363761999389367}
+  - component: {fileID: 4837736490102722077}
   m_Layer: 0
   m_Name: Magic fire 0
   m_TagString: Fire
@@ -19018,19 +19018,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &-6932849742919904220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1692517446758730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e738bc0edcbfc44ca11e8a8d30a2403, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &954074316890080228
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19060,3 +19047,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4837736490102722077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692517446758730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a7c2d47d1295e48a33b1ce6d68a856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
