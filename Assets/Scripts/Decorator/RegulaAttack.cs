@@ -9,7 +9,9 @@ public class RegulaAttack : MonoBehaviour, IAttacker
     float speed = 90f;
     Transform target;
     private int damage = 20;
+    string type = "Normal";
 
+    public List<AttackDecorator> Decorators { get => decorators; set => decorators = value; }
 
     private void Awake()
     {
@@ -18,28 +20,29 @@ public class RegulaAttack : MonoBehaviour, IAttacker
 
     private void Start()
     {
-       ModifiersDecorators(new FireAttack(this, 50));
+     //  ModifiersDecorators(new FireAttack(this, 50));
     }
 
     public void ModifiersDecorators(AttackDecorator newDecorators)
     {
-        decorators.Add(newDecorators);
+        Decorators.Add(newDecorators);
     }
 
     public void MakeDamage(ITargetEnemy targetEnemy)
     {
-        for(int i = 0; i <decorators.Count; i++)
+        for(int i = 0; i <Decorators.Count; i++)
         {
-            decorators[i].MakeDamage(targetEnemy);
+            Decorators[i].MakeDamage(targetEnemy);
 
         }
 
-        targetEnemy.DamageRecieved(damage, "Normal");
+        targetEnemy.DamageRecieved(damage, type);
     }
 
-    public void AddDamage(int bonusDamage, string type)
+    public void AddDamage(int bonusDamage, string _type)
     {
         damage += bonusDamage;
+        type = _type;
         
     }
 

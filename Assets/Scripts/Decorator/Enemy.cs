@@ -15,12 +15,15 @@ public class Enemy : MonoBehaviour, ITargetEnemy
     private void OnTriggerEnter(Collider other)
     {
         RegulaAttack regular = other.GetComponent<RegulaAttack>();
-
+        
         if (regular)
         {
             regular.MakeDamage(this);
-            Destroy(regular.gameObject);
-        }
-    }
 
+            Destroy(regular.gameObject);
+
+        }
+
+       
+    }
 }

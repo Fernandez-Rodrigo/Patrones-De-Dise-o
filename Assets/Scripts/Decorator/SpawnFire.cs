@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class SpawnFire : MonoBehaviour
 {
-    [SerializeField] private FireAttack normalFire;
+    [SerializeField] private RegulaAttack normalFire;
     [SerializeField] private RegulaAttack normalAttack;
+    private FireAttack fire;
 
 
     [SerializeField] private Transform startPosition;
     [SerializeField] private Transform targetPosition;
 
-   
+
+    private void Awake()
+    {
+        normalFire = new RegulaAttack();
+        fire = new FireAttack(normalFire, 50);
+    }
 
     public void SpawnRegular(RegulaAttack _attacker, Transform startPosition, Transform _endTarget)
     {
@@ -19,10 +25,10 @@ public class SpawnFire : MonoBehaviour
         _endTarget = targetPosition;
     }
 
-    public void SpawnSpecial(AttackDecorator _attacker, RegulaAttack _regularAttack, Transform startPosition, Transform _endTarget)
+    public void SpawnSpecial(RegulaAttack _attacker, Transform startPosition, Transform _endTarget)
     {
-        //Instantiate(_attacker, startPosition);
-        Instantiate(_regularAttack, startPosition);
+        Instantiate(_attacker.gameObject, startPosition);
+       
         _endTarget = targetPosition;
     }
 
@@ -35,9 +41,20 @@ public class SpawnFire : MonoBehaviour
                                  
         }
 
-       
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            AddSpecial(fire);
+            SpawnSpecial(normalFire, startPosition, targetPosition);
+        }
+
+
     }
 
+
+    public void AddSpecial(AttackDecorator addSpecial)
+    {
+        normalFire.ModifiersDecorators(addSpecial);
+    }
 
 
 
