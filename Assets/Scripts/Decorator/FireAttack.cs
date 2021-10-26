@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class FireAttack : AttackDecorator
 {
-    float speed = 90f;
-    Transform target;
     private readonly int fireDamage = 50;
 
  
