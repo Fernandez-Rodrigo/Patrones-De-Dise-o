@@ -14,11 +14,11 @@ public abstract class AttackDecorator : IAttacker
 
     public void MakeDamage(ITargetEnemy targetEnemy)
     {
-      //  if (!_attacker.Equals(null))
-      //  {
+       if (!_attacker.Equals(null))
+       {
             _enemy = targetEnemy;
-       
-       // }
+            Modify();
+       }
     }
 
 
