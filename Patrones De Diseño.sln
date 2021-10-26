@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{CFA4B1B7-7B3A-4732-AF36-F219D19B463F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{5C4FDA12-88A4-CE87-AF16-A31F6139A84F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{EA0CC75C-93B7-600D-7F1D-0BE8BC654EC3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{E62F1F95-2D2E-40FE-B03E-4B8BFCA658C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,12 +23,15 @@ Global
 		{5C4FDA12-88A4-CE87-AF16-A31F6139A84F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C4FDA12-88A4-CE87-AF16-A31F6139A84F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C4FDA12-88A4-CE87-AF16-A31F6139A84F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EA0CC75C-93B7-600D-7F1D-0BE8BC654EC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA0CC75C-93B7-600D-7F1D-0BE8BC654EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA0CC75C-93B7-600D-7F1D-0BE8BC654EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA0CC75C-93B7-600D-7F1D-0BE8BC654EC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E62F1F95-2D2E-40FE-B03E-4B8BFCA658C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E62F1F95-2D2E-40FE-B03E-4B8BFCA658C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E62F1F95-2D2E-40FE-B03E-4B8BFCA658C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E62F1F95-2D2E-40FE-B03E-4B8BFCA658C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95C6F964-9064-4943-9F68-15455142EB53}
 	EndGlobalSection
 EndGlobal

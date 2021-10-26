@@ -15,7 +15,6 @@ public class SpawnFire : MonoBehaviour
 
     private void Awake()
     {
-        normalFire = new RegulaAttack();
         fire = new FireAttack(normalFire, 50);
     }
 
