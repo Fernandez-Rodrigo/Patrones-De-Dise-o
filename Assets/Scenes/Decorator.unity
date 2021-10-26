@@ -540,8 +540,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2bc83dd3060d6843a1be42be580659e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalFire: {fileID: -8030908913296252912, guid: e55149ba6f4d00741984987e258c3378,
-    type: 3}
+  fire: {fileID: -8030908913296252912, guid: e55149ba6f4d00741984987e258c3378, type: 3}
+  water: {fileID: -2652252576295580749, guid: c590b17884b119046bc6412066500b7d, type: 3}
   normalAttack: {fileID: 4837736490102722077, guid: 08fd1b80cc24cc8439f45fda3c558255,
     type: 3}
   startPosition: {fileID: 34780673}

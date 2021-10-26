@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\Decorator\RegulaAttack.cs" />
     <Compile Include="Assets\Scripts\Decorator\SpawnFire.cs" />
     <Compile Include="Assets\Scripts\Decorator\TargetEnemy.cs" />
+    <Compile Include="Assets\Scripts\Decorator\WatterAttack.cs" />
     <Compile Include="Assets\Scripts\Facade\SpawnFacade.cs" />
     <Compile Include="Assets\Scripts\Factory\CommonZombie.cs" />
     <Compile Include="Assets\Scripts\Factory\GreenZombie.cs" />

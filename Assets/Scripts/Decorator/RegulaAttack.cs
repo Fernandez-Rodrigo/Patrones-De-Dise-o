@@ -6,6 +6,7 @@ public class RegulaAttack : MonoBehaviour, IAttacker
 {
 
     private List<AttackDecorator> decorators = new List<AttackDecorator>();
+    public RegulaAttack regularAttack;
     float speed = 90f;
     Transform target;
     private int damage = 20;
@@ -20,7 +21,16 @@ public class RegulaAttack : MonoBehaviour, IAttacker
 
     private void Start()
     {
-     //  ModifiersDecorators(new FireAttack(this, 50));
+        
+        if (this.gameObject.tag == "Fire")
+        {
+            ModifiersDecorators(new FireAttack(this, 50));
+        }
+
+        if (this.gameObject.tag == "Water")
+        {
+            ModifiersDecorators(new WatterAttack(this, 40));
+        }
     }
 
     public void ModifiersDecorators(AttackDecorator newDecorators)

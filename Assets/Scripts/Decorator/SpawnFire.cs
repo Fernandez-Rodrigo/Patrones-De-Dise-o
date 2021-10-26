@@ -4,19 +4,12 @@ using UnityEngine;
 
 public class SpawnFire : MonoBehaviour
 {
-    [SerializeField] private RegulaAttack normalFire;
+    [SerializeField] private RegulaAttack fire;
+    [SerializeField] private RegulaAttack water;
     [SerializeField] private RegulaAttack normalAttack;
-    private FireAttack fire;
-
-
     [SerializeField] private Transform startPosition;
     [SerializeField] private Transform targetPosition;
 
-
-    private void Awake()
-    {
-        fire = new FireAttack(normalFire, 50);
-    }
 
     public void SpawnRegular(RegulaAttack _attacker, Transform startPosition, Transform _endTarget)
     {
@@ -42,19 +35,14 @@ public class SpawnFire : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            AddSpecial(fire);
-            SpawnSpecial(normalFire, startPosition, targetPosition);
+            SpawnSpecial(fire, startPosition, targetPosition);
         }
 
-
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            SpawnSpecial(water, startPosition, targetPosition);
+        }
     }
-
-
-    public void AddSpecial(AttackDecorator addSpecial)
-    {
-        normalFire.ModifiersDecorators(addSpecial);
-    }
-
 
 
 }
