@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Installer : MonoBehaviour
+public class Instalador : MonoBehaviour
 {
     /*[SerializeField] private HeroConfig heroConfiguration;
     [SerializeField] private WeaponConfig weaponConfiguration;
