@@ -21,7 +21,6 @@ public class Heroe : MonoBehaviour
 
     public void SetWeapon(IArma arma)
     {
-        _arma = arma;
+      _arma = arma;
     }
-
 }

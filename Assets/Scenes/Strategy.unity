@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 126971393}
   - component: {fileID: 126971392}
   - component: {fileID: 126971391}
-  - component: {fileID: 126971394}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -205,23 +204,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 19.78, y: 0, z: 0}
---- !u!114 &126971394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 126971390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efa0b8004084fe2478f222d9d6acf2fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hero: {fileID: 8784591812490176731, guid: 57684dc049a269f45b0ce7c8b5a3baf4, type: 3}
-  _sword: {fileID: 8678634860373339509, guid: 0e960670a1eb55b44b56f715951db803, type: 3}
-  _staff: {fileID: 7875619140754854787, guid: 8e26553eb7bc8f84e87ad5cbe258d7a2, type: 3}
-  _spear: {fileID: 3265992611694946047, guid: c8f328ffdc9cd3646ab8b4c340edbbba, type: 3}
-  weaponValue: 0
 --- !u!1001 &303735931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -574,7 +556,7 @@ MonoBehaviour:
   _sword: {fileID: 8678634860373339509, guid: 0e960670a1eb55b44b56f715951db803, type: 3}
   _staff: {fileID: 7875619140754854787, guid: 8e26553eb7bc8f84e87ad5cbe258d7a2, type: 3}
   _spear: {fileID: 3265992611694946047, guid: c8f328ffdc9cd3646ab8b4c340edbbba, type: 3}
-  weaponValue: 3
+  weaponValue: 2
 --- !u!114 &2023048487 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8784591812490176731, guid: 57684dc049a269f45b0ce7c8b5a3baf4,

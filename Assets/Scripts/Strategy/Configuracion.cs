@@ -14,23 +14,23 @@ public class Configuracion : MonoBehaviour
     private void Awake()
     {
 
-        var weapon = GetWeapon(_hero.weaponPlace, weaponValue);
+        var weapon = InstantiateWeapon(_hero.weaponPlace, weaponValue);
         _hero.SetWeapon(weapon);
      
     }
 
-    private IArma GetWeapon(Transform place, int option)
+    private IArma InstantiateWeapon(Transform place, int option)
     {
         switch (option)
         {
-            case 1:               
+            case 1:
                 var sword = Instantiate(_sword, place);
                 actualWeapon = sword.gameObject;
                 return sword;
             case 2:
                 var spear = Instantiate(_spear, place);
                 actualWeapon = spear.gameObject;
-                return spear;
+                return spear; 
             case 3:
                 var staff = Instantiate(_staff, place);
                 actualWeapon = staff.gameObject;
@@ -45,28 +45,25 @@ public class Configuracion : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             weaponValue = 1;
-            var weapon = GetWeapon(_hero.weaponPlace, weaponValue);
             Destroy(actualWeapon);
-           _hero.SetWeapon(weapon);
+            var weapon = InstantiateWeapon(_hero.weaponPlace, weaponValue);
+            _hero.SetWeapon(weapon);
+            
         }
         else if(Input.GetKeyDown(KeyCode.Alpha2))
         {
-                weaponValue = 2;
-            var weapon = GetWeapon(_hero.weaponPlace, weaponValue);
+            weaponValue = 2;
             Destroy(actualWeapon);
+            var weapon = InstantiateWeapon(_hero.weaponPlace, weaponValue);
             _hero.SetWeapon(weapon);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             weaponValue = 3;
-            var weapon = GetWeapon(_hero.weaponPlace, weaponValue);
             Destroy(actualWeapon);
+            var weapon = InstantiateWeapon(_hero.weaponPlace, weaponValue);
             _hero.SetWeapon(weapon);
         }
     }
 
-    public int GetWeaponNumber(int number)
-    {
-        return number;
-    }
 }
