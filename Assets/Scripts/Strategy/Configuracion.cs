@@ -11,9 +11,11 @@ public class Configuracion : MonoBehaviour
     public int weaponValue;
     GameObject actualWeapon;
 
+    [SerializeField] HealthView healthView;
+
     private void Awake()
     {
-
+        healthView.Configure(_hero);
         var weapon = InstantiateWeapon(_hero.weaponPlace, weaponValue);
         _hero.SetWeapon(weapon);
      
@@ -63,6 +65,9 @@ public class Configuracion : MonoBehaviour
             Destroy(actualWeapon);
             var weapon = InstantiateWeapon(_hero.weaponPlace, weaponValue);
             _hero.SetWeapon(weapon);
+        }else if (Input.GetKeyDown(KeyCode.Q))
+        {
+            _hero.ApplyDamage(10);
         }
     }
 

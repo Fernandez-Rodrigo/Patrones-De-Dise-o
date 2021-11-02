@@ -103,8 +103,10 @@
     <Compile Include="Assets\Scripts\Strategy\Baculo.cs" />
     <Compile Include="Assets\Scripts\Strategy\Configuracion.cs" />
     <Compile Include="Assets\Scripts\Strategy\Espada.cs" />
+    <Compile Include="Assets\Scripts\Strategy\HealthView.cs" />
     <Compile Include="Assets\Scripts\Strategy\Heroe.cs" />
     <Compile Include="Assets\Scripts\Strategy\IArma.cs" />
+    <Compile Include="Assets\Scripts\Strategy\IHeroe.cs" />
     <Compile Include="Assets\Scripts\Strategy\Lanza.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
@@ -744,6 +746,10 @@
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{9C5D38B2-29B1-9AEA-AC3C-0AEDF5F7A84C}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniRx.csproj">
+      <Project>{267ECECC-BB5C-3612-71A4-F965200536FE}</Project>
+      <Name>UniRx</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
